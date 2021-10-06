@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
-public class C5_06a {
+public class C5_06 {
+    //Задача 6:
+    //Напишете програма, която намира най-голямото по стойност число
+    //измежду дадени 5 числа.
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("The greatest of five integers will be expressed.%n" +

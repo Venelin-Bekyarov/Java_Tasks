@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class C5_09 {
     public static void main(String[] args) {
-
+        //Задача 9:
+        //Напишете програма, която преобразува дадено число в интервала
+        //[0..999] в текст, съответстващ на българското произношение.
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Insert number between 0 and 999 and the program will express it with Bulgarian words:%n");
 
