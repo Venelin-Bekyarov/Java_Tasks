@@ -1,3 +1,7 @@
+//Задача 6:
+//Напишете програма, която пресмята N!/K! за дадени N и K (1<K<N).
+
+
 import java.util.Scanner;
 
 public class C6_06 {
