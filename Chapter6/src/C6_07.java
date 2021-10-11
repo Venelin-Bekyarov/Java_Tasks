@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class C06_06 {
+public class C6_07 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("You are going to find result of !N/!K.%n" +
@@ -13,10 +13,15 @@ public class C06_06 {
                         "N in range (3-1000), K in range (2-999) and N not equal to K:%n");
                 continue;
             }
-            int outcome = 1;
-            for (int i = k + 1; i <= n; i++) {
-                outcome *= i;
+            int factorialOne = 1;
+            for (int i = n; i > (n - k); i--) {
+                factorialOne *= i;
             }
+            int factorialTwo = 1;
+            for (int l = k; l > 1; l--) {
+                factorialTwo *= l;
+            }
+            int outcome = factorialOne * factorialTwo;
             System.out.printf("Result is %d.", outcome);
             break;
         }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class C06_04 {
+public class C6_04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("This is a standard deck of playing cards:%n");
