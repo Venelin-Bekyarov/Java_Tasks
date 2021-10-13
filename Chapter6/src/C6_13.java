@@ -16,7 +16,6 @@ public class C6_13 {
         int decimal = Integer.parseInt(binary, 2);
 
         System.out.printf("The decimal equivalent of binary number N is: %d",decimal);
-        System.exit(0);
     }
 
 }

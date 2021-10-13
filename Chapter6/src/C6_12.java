@@ -13,7 +13,7 @@ public class C6_12 {
         int n = Integer.parseInt(scanner.nextLine());
         if (n == 0) {
             System.out.println("Binary format of number N is: 0");
-            System.exit(0);
+            return;
         }
 
         while (true) {

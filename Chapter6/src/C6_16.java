@@ -25,7 +25,7 @@ public class C6_16 {
             int randomNum = ThreadLocalRandom.current().nextInt(min, max + 1);
 
             System.out.printf("The generated random number is: %d",randomNum);
-            System.exit(0);
+            break;
         }
     }
 }

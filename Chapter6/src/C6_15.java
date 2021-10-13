@@ -15,6 +15,5 @@ public class C6_15 {
         int decimal=Integer.parseInt(hex,16);
 
         System.out.printf("The decimal equivalent of hexadecimal number N is: %d",decimal);
-        System.exit(0);
     }
 }

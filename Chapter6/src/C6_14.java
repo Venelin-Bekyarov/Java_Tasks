@@ -15,6 +15,5 @@ public class C6_14 {
         int decimal = Integer.parseInt(scanner.nextLine());
         String str = Integer.toHexString(decimal);
         System.out.printf("Hexadecimal number of N is: %s", str);
-        System.exit(0);
     }
 }
