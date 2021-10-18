@@ -19,15 +19,14 @@ public class C7_03 {
         char[] arr2 = inputArrayTwo.toCharArray();
 
         int i = 0;
-        int j = 0;
         boolean equal = false;
 
-        while (i < arr1.length && j < arr2.length) {
-            if (arr1[i] > arr2[j]) {
+        while (i < arr1.length && i < arr2.length) {
+            if (arr1[i] > arr2[i]) {
                 System.out.printf("'%s' is further.", inputArrayTwo);
                 equal = false;
                 break;
-            } else if (arr1[i] < arr2[j]) {
+            } else if (arr1[i] < arr2[i]) {
                 System.out.printf("'%s' is further.", inputArrayOne);
                 equal = false;
                 break;
@@ -35,7 +34,7 @@ public class C7_03 {
                 equal = true;
             }
             i++;
-            j++;
+
         }
         if (equal) {
             if (arr1.length < arr2.length) {
