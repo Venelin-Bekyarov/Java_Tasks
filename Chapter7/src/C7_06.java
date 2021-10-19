@@ -2,7 +2,10 @@
 //Да се напише програма, която чете от конзолата две цели числа N и K,
 //и масив от N елемента. Да се намерят тези K елемента, които имат
 //максимална сума.
+//вход: N:4, K:2, elements: 10,1,1,20
+//изхода трябва да е 10, 20
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class C7_06 {
@@ -35,6 +38,7 @@ public class C7_06 {
             }
             sum = 0;
         }
+        Arrays.sort(array);
         System.out.print("Largest sum of K elements: ");
         for (int i = k - 1; i > 0; i--) {
             System.out.print(array[a - i] + ", ");
