@@ -8,7 +8,7 @@ public class C7_10A {
     public static void main(String[] args) {
 //A
         Scanner scanner = new Scanner(System.in);
-        System.out.printf("You will print a square matrix expanding in a vertical sequence.%n" +
+        System.out.printf("You will print a square matrix array expanding in a vertical sequence.%n" +
                 "Enter square length (rows/columns): ");
         int N = Integer.parseInt(scanner.nextLine());
         int[][] arrayNN = new int[N][N];
@@ -23,7 +23,7 @@ public class C7_10A {
             }
             k += N - 1;
         }
-        System.out.println("The square matrix: ");
+        System.out.println("The square matrix array: ");
         for (int i = 0; i < arrayNN[0].length; i++)
         {
             for (int j = 0; j < arrayNN[1].length; j++)

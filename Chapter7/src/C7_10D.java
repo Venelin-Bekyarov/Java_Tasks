@@ -4,7 +4,7 @@ public class C7_10D {
     public static void main(String[] args) {
 //D
         Scanner scanner = new Scanner(System.in);
-        System.out.printf("You will print a square matrix expanding in a helix.%n" +
+        System.out.printf("You will print a square matrix array expanding in a helix.%n" +
                 "Enter square length (rows/columns): ");
         int N = Integer.parseInt(scanner.nextLine());
         int[][] array = new int[N][N];
@@ -32,7 +32,7 @@ public class C7_10D {
             xCoord += navigator[direction][0];
             yCoord += navigator[direction][1];
         }
-        System.out.println("The square matrix: ");
+        System.out.println("The square matrix array: ");
         for (int i = 0; i < array[0].length; i++)
         {
             for (int j = 0; j < array[1].length; j++)

@@ -4,7 +4,7 @@ public class C7_10B {
     public static void main(String[] args) {
 //B
         Scanner scanner = new Scanner(System.in);
-        System.out.printf("You will print a square matrix expanding in a snake shape.%n" +
+        System.out.printf("You will print a square matrix array expanding in a snake shape.%n" +
                 "Enter square length (rows/columns): ");
         int N = Integer.parseInt(scanner.nextLine());
         int[][] arrayNN = new int[N][N];
@@ -29,7 +29,7 @@ public class C7_10B {
                 k -= 1;
             }
         }
-        System.out.println("The square matrix: ");
+        System.out.println("The square matrix array: ");
         for (int i = 0; i < arrayNN[0].length; i++)
         {
             for (int j = 0; j < arrayNN[1].length; j++)
