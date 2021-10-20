@@ -40,11 +40,10 @@ public class C7_06 {
         }
 
         System.out.print("Largest sum of K elements: ");
-        for (int i = k - 1; i > 0; i--) {
+        for (int i = k - 1; i >= 0; i--) {
             Arrays.sort(array);
             System.out.print(array[a - i] + ", ");
 
         }
-        System.out.print(array[a]);
     }
 }

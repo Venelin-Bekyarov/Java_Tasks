@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 public class C7_07 {
     public static void main(String[] args) {
+
+
         Scanner scanner = new Scanner(System.in);
         System.out.printf("You are about to 'selection sort' an array entered.%n" +
                 "Enter array length: ");

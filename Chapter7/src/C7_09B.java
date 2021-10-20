@@ -8,6 +8,8 @@ import java.util.Scanner;
 
 public class C7_09B {
     public static void main(String[] args) {
+
+
         Scanner scanner = new Scanner(System.in);
         System.out.printf("You will find array's consecutive numbers which sum is equal to required sum (S).%n" +
                 "Enter array length: ");

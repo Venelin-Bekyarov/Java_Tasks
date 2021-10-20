@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class C6_06 {
     public static void main(String[] args) {
+
+
         Scanner scanner = new Scanner(System.in);
         System.out.printf("You are going to find result of !N/!K.%n" +
                 "Please enter N and K:%n");
