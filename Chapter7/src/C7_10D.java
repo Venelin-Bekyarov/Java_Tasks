@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class C7_10D {
     public static void main(String[] args) {
-
 //D
         Scanner scanner = new Scanner(System.in);
         System.out.printf("You will print a square matrix expanding in a helix.%n" +

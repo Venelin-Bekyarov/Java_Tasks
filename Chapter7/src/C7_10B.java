@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class C7_10B {
     public static void main(String[] args) {
-
 //B
         Scanner scanner = new Scanner(System.in);
         System.out.printf("You will print a square matrix expanding in a snake shape.%n" +

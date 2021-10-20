@@ -2,12 +2,10 @@
 //Напишете програма, която създава квадратни матрици и ги
 //извежда на конзолата във форматиран вид.
 
-
 import java.util.Scanner;
 
 public class C7_10A {
     public static void main(String[] args) {
-
 //A
         Scanner scanner = new Scanner(System.in);
         System.out.printf("You will print a square matrix expanding in a vertical sequence.%n" +

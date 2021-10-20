@@ -2,9 +2,7 @@ import java.util.Scanner;
 
 public class C7_10C {
     public static void main(String[] args) {
-
 //C
-
         Scanner scanner = new Scanner(System.in);
         System.out.printf("You will print a square matrix expanding in a diagonal.%n" +
                 "Enter square length (rows/columns): ");
