@@ -12,8 +12,8 @@ public class C6_15 {
                 "Please enter N:%n");
 
         String hex = scanner.nextLine();
-        int decimal=Integer.parseInt(hex,16);
+        int decimal = Integer.parseInt(hex, 16);
 
-        System.out.printf("The decimal equivalent of hexadecimal number N is: %d",decimal);
+        System.out.printf("The decimal equivalent of hexadecimal number N is: %d", decimal);
     }
 }
