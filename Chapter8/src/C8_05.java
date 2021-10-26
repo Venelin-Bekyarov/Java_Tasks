@@ -15,11 +15,11 @@ public class C8_05 {
                 "Please enter a binary number: ");
 
         binaryNumber = scanner.nextLong();
-        while (binaryNumber!=0) {
-            temporary= binaryNumber%10;
-            decimalNumber += temporary*multiplicator;
-            multiplicator = multiplicator*2;
-                    binaryNumber = binaryNumber/10;
+        while (binaryNumber != 0) {
+            temporary = binaryNumber % 10;
+            decimalNumber += temporary * multiplicator;
+            multiplicator = multiplicator * 2;
+            binaryNumber = binaryNumber / 10;
         }
         System.out.println("Decimal equivalent: ");
         System.out.println(decimalNumber);
