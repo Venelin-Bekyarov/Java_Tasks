@@ -2,7 +2,6 @@
 //Превърнете числото 1111010110011110(2) в шестнадесетична и десетична
 //бройна система.
 
-
 public class C8_02 {
     public static void main(String[] args) {
         String binNum = "1111010110011110";
