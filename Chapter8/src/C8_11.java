@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class C8_11 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.printf("You will transform a Roman style digits number into a Arabic style digits number.%n" +
+        System.out.printf("You will transform a Roman style digits number into an Arabic style digits number.%n" +
                 "Please enter a Roman's digits number: %n");
         String romanNumber = scanner.nextLine();
         int decimalNumber = 0;
