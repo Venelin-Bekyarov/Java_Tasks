@@ -45,7 +45,6 @@ public class C8_08 {
                 }
             }
 
-            // Convert to binary
             while (decimalRepresentation != 0) {
                 byte remainder = (byte) (decimalRepresentation % 2);
                 binaryRepresentation = remainder + binaryRepresentation;
