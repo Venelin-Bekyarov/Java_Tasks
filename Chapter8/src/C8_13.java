@@ -14,9 +14,10 @@ public class C8_13 {
         float signedFloatNum = Float.parseFloat(scanner.nextLine());
         int exponentDec = 0;
         char sign = '0';
-
+        int eightBit = 127;
         float normalizationLimit = 1;
-        for (int i = 0; i < 126; i++) {
+        int pointOneFloatMantissa = 22;
+        for (int i = 0; i < eightBit-1; i++) {
             normalizationLimit /= 2;
         }
 
@@ -49,7 +50,7 @@ public class C8_13 {
             float tmpN = 0;
             float dN = 0.5f;
 
-            for (int i = 0; i < 23; i++) {
+            for (int i = 0; i < pointOneFloatMantissa +1; i++) {
                 if (mantissaDec >= tmpN + dN) {
                     tmpN += dN;
                     mantissaBin = mantissaBin + '1';
@@ -58,9 +59,9 @@ public class C8_13 {
                 }
                 dN /= 2;
             }
-
-            int exponentDecShift = exponentDec + 127;
-            for (int i = 0; i < 8; i++) {
+            int exponentLengthDigits = 8;
+            int exponentDecShift = exponentDec + eightBit;
+            for (int i = 0; i < exponentDecShift; i++) {
                 if (exponentDecShift % 2 == 1) {
                     exponentBin = "1" + exponentBin;
                 } else {
@@ -75,7 +76,7 @@ public class C8_13 {
             float tempNum = 0;
             float doubleNum = 0.5f;
 
-            for (int i = 0; i < 23; i++) {
+            for (int i = 0; i < pointOneFloatMantissa +1; i++) {
                 if (mantissaDec >= tempNum + doubleNum) {
                     tempNum += doubleNum;
                     mantissaBin = mantissaBin + '1';
