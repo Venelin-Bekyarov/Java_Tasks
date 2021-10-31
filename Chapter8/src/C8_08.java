@@ -23,15 +23,26 @@ public class C8_08 {
             }
             else
             {
-                decimalRepresentation = switch (hexadecimalDigit) {
-                    case 'A' -> 10;
-                    case 'B' -> 11;
-                    case 'C' -> 12;
-                    case 'D' -> 13;
-                    case 'E' -> 14;
-                    case 'F' -> 15;
-                    default -> decimalRepresentation;
-                };
+                switch (hexadecimalDigit) {
+                    case 'A':
+                        decimalRepresentation = 10;
+                        break;
+                    case 'B':
+                        decimalRepresentation = 11;
+                        break;
+                    case 'C':
+                        decimalRepresentation = 12;
+                        break;
+                    case 'D':
+                        decimalRepresentation = 13;
+                        break;
+                    case 'E':
+                        decimalRepresentation = 14;
+                        break;
+                    case 'F':
+                        decimalRepresentation = 15;
+                        break;
+                }
             }
 
             while (decimalRepresentation != 0) {
