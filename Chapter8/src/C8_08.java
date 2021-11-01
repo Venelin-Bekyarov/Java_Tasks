@@ -21,8 +21,9 @@ public class C8_08 {
             if (Character.isDigit(hexadecimalDigit)) {
                 decimalRepresentation = (byte) (hexadecimalDigit - '0');
             }
-            else
-            {
+            else {
+                //decimalRepresentation = (byte) (hexadecimalDigit - 'A' + 10);
+
                 switch (hexadecimalDigit) {
                     case 'A':
                         decimalRepresentation = 10;
