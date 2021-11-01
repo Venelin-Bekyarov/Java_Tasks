@@ -22,10 +22,10 @@ public class C9_05 {
         System.out.println("Enter position to check: ");
         int position = Integer.parseInt(scanner.nextLine());
 
-        CheckNeighbours(array, position);
+        checkNeighbours(array, position);
     }
 
-    static void CheckNeighbours(int[] array, int position) {
+    static void checkNeighbours(int[] array, int position) {
         if (position == 0) {
             System.out.println("This is first element");
             return;

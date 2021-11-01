@@ -21,12 +21,12 @@ public class C9_06 {
             array[indexes] = Integer.parseInt(scanner.nextLine());
         }
 
-        int result = CheckAllNeighbors(array);
+        int result = checkAllNeighbours(array);
         if (result != -1) System.out.printf("Found at position %d", result);
         else System.out.println("Not found");
     }
 
-    static int CheckAllNeighbors(int[] array) {
+    static int checkAllNeighbours(int[] array) {
         for (int i = 1; i < array.length - 1; i++) {
             if (CheckNeighbors(array, i)) return i;
         }
