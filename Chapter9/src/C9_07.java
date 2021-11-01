@@ -23,12 +23,12 @@ public class C9_07 {
 
     static int reverse(int num) {
         int cnt = countDigits(num);
-        int tempNum = 0;
+        int tempNumber = 0;
         for (int i = cnt - 1; i >= 0; i--) {
-            tempNum += (num % 10) * (int) Math.pow(10, i);
+            tempNumber += (num % 10) * (int) Math.pow(10, i);
             num /= 10;
         }
-        return tempNum;
+        return tempNumber;
     }
 }
 
