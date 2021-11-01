@@ -4,18 +4,15 @@
 import java.util.Scanner;
 
 public class C9_01 {
-    public static void main(String[] args) {
-        String myNameToBePrinted;
-        myNameToBePrinted = InputName();
-        System.out.printf("Hello, %s!", myNameToBePrinted);
+    private static void printHello(String name) {
+        System.out.printf("Hello, %s!", name);
     }
 
-    private static String InputName() {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String nameInput;
-        System.out.println("Input your name ");
-        nameInput = scanner.nextLine();
-        return nameInput;
+        String inputName = scanner.nextLine();
+        printHello(inputName);
     }
 }
+
 
