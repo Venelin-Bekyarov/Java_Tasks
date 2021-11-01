@@ -3,11 +3,13 @@ import java.util.Scanner;
 public class C9_07 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.printf("You will use a program to mirror a number entered. %n" +
+                "Please enter your number: ");
 
         int number = Integer.parseInt(scanner.nextLine());
 
         int reverse = reverse(number);
-        System.out.println(reverse);
+        System.out.printf("The mirrored number of '%d' is '%d'.", number, reverse);
     }
 
     static int countDigits(int number) {
