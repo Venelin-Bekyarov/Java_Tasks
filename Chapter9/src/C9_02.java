@@ -14,10 +14,10 @@ public class C9_02 {
         int bNumber = Integer.parseInt(scanner.nextLine());
         int cNumber = Integer.parseInt(scanner.nextLine());
         System.out.println("The greatest number is:");
-        System.out.println(GetMax(GetMax(aNumber, bNumber), cNumber));
+        System.out.println(getMax(getMax(aNumber, bNumber), cNumber));
     }
 
-    private static int GetMax(int a, int b) {
+    private static int getMax(int a, int b) {
         if (a > b) return a;
         else return b;
     }

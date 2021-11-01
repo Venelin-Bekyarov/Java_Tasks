@@ -21,10 +21,10 @@ public class C9_04 {
         System.out.println("Number to search for: ");
         int numToSearch = Integer.parseInt(scanner.nextLine());
 
-        System.out.printf("Found %d times", CheckNum(array, numToSearch));
+        System.out.printf("Found %d times", checkNum(array, numToSearch));
     }
 
-    static int CheckNum(int[] array, int num) {
+    static int checkNum(int[] array, int num) {
         int numberCount = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == num) numberCount++;

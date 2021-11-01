@@ -10,11 +10,11 @@ public class C9_03 {
         System.out.println("Enter a number:");
         int num = Integer.parseInt(scanner.nextLine());
 
-        String lastDigit = GetLast(num % 10);
+        String lastDigit = getLast(num % 10);
         System.out.printf("The last digit is '%s'.", lastDigit);
     }
 
-    static String GetLast(int num) {
+    static String getLast(int num) {
         if (num < 0) num = -num;
 
         if (num == 0) return "Zero";
