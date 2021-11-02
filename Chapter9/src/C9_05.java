@@ -42,6 +42,5 @@ public class C9_05 {
             System.out.println("Smaller than neighbours");
             return;
         } else System.out.println("Neither bigger or smaller than neighbours");
-        return;
     }
 }
