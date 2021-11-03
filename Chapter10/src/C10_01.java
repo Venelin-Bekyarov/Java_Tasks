@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class C10_01 {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("You will find all repetitive combinations of 'K' elements over 'N'-elements aggregate. %n" +

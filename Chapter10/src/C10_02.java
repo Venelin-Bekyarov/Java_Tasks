@@ -14,7 +14,6 @@ public class C10_02 {
 
         chooseElement(n, k, 0, holder);
     }
-
     static void chooseElement(int n, int k, int index, int[] holder) {
         if (index == k) {
             holderPrint(k, holder);
@@ -25,7 +24,6 @@ public class C10_02 {
             }
         }
     }
-
     static void holderPrint(int k, int[] holder) {
         for (int i = 0; i < k; i++) {
             System.out.print(holder[i]);
