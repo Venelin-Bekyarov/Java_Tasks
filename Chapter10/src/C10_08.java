@@ -18,7 +18,7 @@ public class C10_08 {
             numbers[i] = Integer.parseInt(scanner.nextLine());
         }
 
-        System.out.print("It is " + (findSubSetSum(numbers, 0))+ " statement.");
+        System.out.printf("It is " + (findSubSetSum(numbers, 0))+ " statement that there are elements which sum equals to '%d'.", n);
     }
 
     static boolean findSubSetSum(int[] numbers, int currIndex) {
