@@ -11,15 +11,8 @@ public class C11_01 {
         millis -= TimeUnit.MINUTES.toMillis(minutes);
         long seconds = TimeUnit.MILLISECONDS.toSeconds(millis);
 
-        StringBuilder sb = new StringBuilder();
-        sb.append(days);
-        sb.append(" Days, ");
-        sb.append(hours);
-        sb.append(" Hours, ");
-        sb.append(minutes);
-        sb.append(" Minutes, ");
-        sb.append(seconds);
-        sb.append(" Seconds");
+        String sb = days + " Days, " + hours + " Hours, " + minutes + " Minutes, " + seconds +
+                " Seconds";
 
         System.out.println("Time elapsed: " + sb);
     }
