@@ -28,7 +28,7 @@ public class C12_10 {
         long length = lineOfFile.length();
         for (int symbol = 0; symbol < length; symbol++)
         {
-            if (lineOfFile.charAt(symbol) > 9)
+            if (lineOfFile.charAt(symbol) < 47 | lineOfFile.charAt(symbol) >57)
             {
                 containsNumber = false;
                 break;
