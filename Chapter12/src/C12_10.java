@@ -13,7 +13,7 @@ public class C12_10 {
             String[] fileContent = text.split("\n");
             long length = fileContent.length;
             for (int line = 0; line < length; line++) {
-                ParseLine(fileName, fileContent[line].trim(), line + 1);
+                parseLine(fileName, fileContent[line].trim(), line + 1);
             }
         } catch (FileParseException fpe) {
             System.out.println(fpe.fileName);
@@ -23,7 +23,7 @@ public class C12_10 {
         }
     }
 
-    static void ParseLine(String fileName, String lineOfFile, long lineNumber) throws FileParseException {
+    static void parseLine(String fileName, String lineOfFile, long lineNumber) throws FileParseException {
         boolean containsNumber = true;
         long length = lineOfFile.length();
         for (int symbol = 0; symbol < length; symbol++)
@@ -34,7 +34,7 @@ public class C12_10 {
                 break;
             }
         }
-        if (containsNumber)
+        if (!containsNumber)
             throw new FileParseException(fileName, lineNumber);
     }
 }
