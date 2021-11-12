@@ -26,10 +26,8 @@ public class C12_10 {
     static void parseLine(String fileName, String lineOfFile, long lineNumber) throws FileParseException {
         boolean containsNumber = true;
         long length = lineOfFile.length();
-        for (int symbol = 0; symbol < length; symbol++)
-        {
-            if (lineOfFile.charAt(symbol) < 47 | lineOfFile.charAt(symbol) >57)
-            {
+        for (int symbol = 0; symbol < length; symbol++) {
+            if (lineOfFile.charAt(symbol) < 47 | lineOfFile.charAt(symbol) > 57) {
                 containsNumber = false;
                 break;
             }
