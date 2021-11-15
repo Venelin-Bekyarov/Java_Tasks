@@ -10,4 +10,3 @@ public class C13_06 {
         }
     }
 }
-
