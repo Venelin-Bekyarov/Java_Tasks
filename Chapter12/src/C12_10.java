@@ -32,7 +32,7 @@ public class C12_10 {
                 break;
             }
         }
-        if (!containsNumber)
+        if (containsNumber)
             throw new FileParseException(fileName, lineNumber);
     }
 }
