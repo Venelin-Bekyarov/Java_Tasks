@@ -8,7 +8,7 @@ public class C13_05 {
         int protocolIndex = url.indexOf(':');
         String protocol = url.substring(0, protocolIndex);
         int serverIndex = url.indexOf('/', protocolIndex + 3);
-        String server = url.substring(protocolIndex + 3, serverIndex - protocolIndex + 4);
+        String server = url.substring(protocolIndex + 3, serverIndex+1 - protocolIndex + 4);
         String resource = url.substring(serverIndex + 1);
         System.out.printf("[protocol]= \"%s\"%n", protocol);
         System.out.printf("[server]= \"%s\"%n", server);
