@@ -1,25 +1,17 @@
 public class Student {
 
-    enum specialty {Design, Finances, IT, Unprovided}
-    enum uni {Technical, Economics, Software, Unprovided}
 
     static int numberOfStudents = 0;
     private String nameFirst;
     private String nameSecond;
     private String nameLast;
     private int year;
-    private specialty specialty;
-    private uni uni;
+    private String specialty;
+    private String uni;
     private String email;
     private String phone;
-    public Student(String nameFirst, String nameSecond, String nameLast, uni uni) {
-        this.nameFirst = nameFirst;
-        this.nameSecond = nameSecond;
-        this.nameLast = null;
-        this.uni = uni.Unprovided;
-    }
 
-    public Student(String nameFirst, String nameSecond, String nameLast, int year, specialty specialty, uni uni,
+    public Student(String nameFirst, String nameSecond, String nameLast,int year, String specialty, String uni,
                    String email, String phone) {
         this.nameFirst = nameFirst;
         this.nameSecond = nameSecond;
@@ -31,6 +23,7 @@ public class Student {
         this.phone = phone;
     }
 
+
     public Student() {
         numberOfStudents++;
     }
@@ -40,9 +33,9 @@ public class Student {
         return numberOfStudents;
     }
 
-    public static void setNumberOfStudents(int studentCount) {
+    public static void setNumberOfStudents(int numberOfStudents) {
 
-        Student.numberOfStudents = studentCount;
+        Student.numberOfStudents = numberOfStudents;
     }
 
     public String fullInfo() {
@@ -90,22 +83,22 @@ public class Student {
         this.year = year;
     }
 
-    public Student.specialty getSpecialty() {
+    public String getSpecialty() {
 
         return specialty;
     }
 
-    public void setSpecialty(Student.specialty specialty) {
+    public void setSpecialty(String specialty) {
 
         this.specialty = specialty;
     }
 
-    public Student.uni getUni() {
+    public String getUni() {
 
         return uni;
     }
 
-    public void setUni(Student.uni uni) {
+    public void setUni(String uni) {
 
         this.uni = uni;
     }
