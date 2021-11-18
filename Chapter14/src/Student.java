@@ -38,12 +38,13 @@ public class Student {
         Student.numberOfStudents = numberOfStudents;
     }
 
-    public String fullInfo() {
-        return nameFirst + " " + nameSecond + " " + nameLast + "%n" +
-                "year: " + year + "%n" +
-                "specialty: " + specialty + " at " + uni + " University" + "%n" +
+    public String toString() {
+        return nameFirst + " " + nameSecond + " " + nameLast +", " +
+                "year: " + year + ", " +
+                "specialty: " + specialty + " at " + uni + " University" + ", " +
                 "email: " + email + ", phone: " + phone;
     }
+
 
     public String getNameFirst() {
 

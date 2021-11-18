@@ -8,7 +8,9 @@ public class StudentTest {
         studentTwo = new Student("Katie", "Ellys", "McWanden", 4,
                 "Design", "Technical","k.e@technicaluni.com","08765432");
     }
-    public static void testPrint(){
+
+    public static void main(String[] args) {
+        studentTest();
         System.out.println(studentOne);
         System.out.println(studentTwo);
     }
