@@ -1,6 +1,7 @@
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class GSM {
 
@@ -92,7 +93,7 @@ public class GSM {
         return callList;
     }
 
-    public void appendCall(LocalDate dateTime, int callStart, int callTimeSpan){
+    public void appendCall(LocalDate dateTime, LocalDateTime callStart, int callTimeSpan){
         Call newCall= new Call(dateTime,callStart,callTimeSpan);
         this.callList.add(newCall);
     }
@@ -108,6 +109,7 @@ public class GSM {
     public void setPriceCall(double priceCall){
         this.priceCall=0.37;
     }
+
 }
 
 class Battery {
