@@ -1,3 +1,7 @@
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
 public class GSM {
 
     static private GSM nokiaN95;
@@ -8,6 +12,9 @@ public class GSM {
     private String make;
     private double price;
     private String keeper;
+
+    private ArrayList <Call> callList;
+    private double priceCall;
 
     public GSM(String model, String make, double price, String keeper, Battery battery, Display display) {
         this.model = model;
@@ -23,10 +30,7 @@ public class GSM {
                 getDisplay().getSize() + " TFT display with " + getDisplay().getColours() +
                 " million colours. Price of " + price + "leva.";
     }
-    /*public static void GSM() {
-        nokiaN95 = new GSM("N95", "Nokia", 50, "Simon",
-                new Battery("BL-6F", 240, 3.5), new Display(2.8, 16));
-    }*/
+
 
     public static GSM getNokiaN95() {
         return nokiaN95;
@@ -82,6 +86,27 @@ public class GSM {
 
     public void setKeeper(String keeper) {
         this.keeper = keeper;
+    }
+
+    public ArrayList<Call> getCallList() {
+        return callList;
+    }
+
+    public void appendCall(LocalDate dateTime, int callStart, int callTimeSpan){
+        Call newCall= new Call(dateTime,callStart,callTimeSpan);
+        this.callList.add(newCall);
+    }
+    public void removeCall(Call currentCall){
+        this.callList.remove(currentCall);
+    }
+    public void clearHistory(){
+        this.callList.clear();
+    }
+    public double getPriceCalls(double priceCall){
+        return callList.size() * priceCall;
+    }
+    public void setPriceCall(double priceCall){
+        this.priceCall=0.37;
     }
 }
 
