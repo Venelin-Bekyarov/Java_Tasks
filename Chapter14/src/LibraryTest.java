@@ -5,7 +5,6 @@ public class LibraryTest {
 
     static StringBuilder outputString = new StringBuilder();
 
-
     static void startTesting() {
         Scanner scanner = new Scanner(System.in);
         Library helikon = new Library("Helikon", null);
