@@ -6,6 +6,14 @@ public class Book {
     private int publishingYear;
     private int ISBN;
 
+    public Book(String title, String author, String publisher, int publishingYear, int iSBN) {
+        this.title = title;
+        this.author = author;
+        this.publisher = publisher;
+        this.publishingYear = publishingYear;
+        this.ISBN = iSBN;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -54,14 +62,6 @@ public class Book {
                 ", publishingYear=" + publishingYear +
                 ", ISBN=" + ISBN +
                 '}';
-    }
-
-    public Book(String title, String author, String publisher, int publishingYear, int iSBN) {
-        this.title = title;
-        this.author = author;
-        this.publisher = publisher;
-        this.publishingYear = publishingYear;
-        this.ISBN = iSBN;
     }
 
 }
