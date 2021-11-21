@@ -33,8 +33,7 @@ public class Library {
         this.name = name;
     }
 
-    public String addBook(Book book)
-    {
+    public String addBook(Book book) {
         bookList.add(book);
         return "Book added.";
     }
@@ -44,17 +43,16 @@ public class Library {
             System.out.println(book);
         }
     }
-    public String titleSearch(String title)
-    {
-        for (Book book: bookList)
-        {
-            if (book.getTitle().equals(title))
-            {
+
+    public String titleSearch(String title) {
+        for (Book book : bookList) {
+            if (book.getTitle().equals(title)) {
                 return book.toString();
             }
         }
         return "Not found.";
     }
+
     public String searchAuthor(String author) {
         StringBuilder searchedBooks = new StringBuilder();
         boolean isFoundBook = false;
@@ -70,25 +68,22 @@ public class Library {
             return "Not found book of this author.";
         }
     }
-    public String deleteBook(Book book)
-    {
-        if (bookList.contains(book))
-        {
+
+    public String deleteBook(Book book) {
+        if (bookList.contains(book)) {
             bookList.remove(book);
             return "Book deleted.";
-        }
-        else
-        {
+        } else {
             return "Book not found.";
         }
     }
-    public String deleteAllBooksAuthor(String author)
-    {
+
+    public String deleteAllBooksAuthor(String author) {
         int numberBooksBeforeDel = bookList.size();
         //bookList.removeAll( author == author);?????
         int numberOfBooksAfterDel = bookList.size();
         int deletedBooks = numberBooksBeforeDel - numberOfBooksAfterDel;
-        return deletedBooks +" Book deleted.";
+        return deletedBooks + " Book deleted.";
     }
 
 
