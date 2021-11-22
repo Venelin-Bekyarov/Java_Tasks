@@ -15,12 +15,12 @@ public class LibraryTest {
             for (int i = 0; i < inputLine.length; i++) {
                 inputLine[i] = inputLine[i].trim();
             }
-            comandExecutes(inputLine, helikon);
+            commandExecutes(inputLine, helikon);
             row = scanner.nextLine();
         }
     }
 
-    static void comandExecutes(String[] inputLine, Library helikon) {
+    static void commandExecutes(String[] inputLine, Library helikon) {
         switch (inputLine[0]) {
             case "addBook": {
                 outputString.append(helikon.addBook
@@ -50,13 +50,13 @@ public class LibraryTest {
         }
     }
 
-    static void PrintOutput() {
+    static void printOutput() {
         System.out.println(outputString.toString());
     }
 
     public static void main(String[] args) {
         startTesting();
-        PrintOutput();
+        printOutput();
     }
 
 }
