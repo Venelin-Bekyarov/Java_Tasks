@@ -55,12 +55,12 @@ public class Book {
     }
 
     public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", publisher='" + publisher + '\'' +
-                ", publishingYear=" + publishingYear +
-                ", ISBN=" + ISBN +
+        return '\n'+"Book{" +
+                "title = '" + title + '\'' +
+                ", author = '" + author + '\'' +
+                ", publisher = '" + publisher + '\'' +
+                ", publishingYear = " + publishingYear +
+                ", ISBN = " + ISBN +
                 '}';
     }
 
