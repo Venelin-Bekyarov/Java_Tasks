@@ -10,7 +10,7 @@ public class LibraryTest {
         Library helikon = new Library("Helikon", null);
         String row = scanner.nextLine();
         while (!Objects.equals(row, "")) {
-            String[] separators = {",", "(", ")"};
+            //String[] separators = {",", "(", ")"};
             String[] inputLine = row.split("[{},()]+");
             for (int i = 0; i < inputLine.length; i++) {
                 inputLine[i] = inputLine[i].trim();
@@ -24,7 +24,7 @@ public class LibraryTest {
         switch (inputLine[0]) {
             case "addBook": {
                 outputString.append(helikon.addBook
-                        (new Book(inputLine[1], inputLine[2], inputLine[3], Integer.parseInt(inputLine[4]), Integer.parseInt(inputLine[5]) + '\'')));
+                        (new Book(inputLine[1], inputLine[2], inputLine[3], Integer.parseInt(inputLine[4]), Integer.parseInt(inputLine[5]) + '\n')));
                 break;
             }
             case "searchAuthor": {
@@ -32,22 +32,22 @@ public class LibraryTest {
                 break;
             }
             case "titleSearch": {
-                outputString.append(helikon.titleSearch(inputLine[1])).append('\'');
+                outputString.append(helikon.titleSearch(inputLine[1])).append('\n');
                 break;
             }
             case "deleteBook": {
                 Book bookToDelete = helikon.bookSearch(inputLine[1]);
                 if (bookToDelete != null){
-                    outputString.append(helikon.deleteBook(bookToDelete) + '\'');
+                    outputString.append(helikon.deleteBook(bookToDelete) + '\n');
                 }
                 break;
             }
             case "deleteAllBooksAuthor": {
-                outputString.append(helikon.deleteAllBooksAuthor(inputLine[1]) + '\'');
+                outputString.append(helikon.deleteAllBooksAuthor(inputLine[1]) + '\n');
                 break;
             }
             default: {
-                outputString.append("Unknown operation." + '\'');
+                outputString.append("Unknown operation." + '\n');
                 break;
             }
         }
