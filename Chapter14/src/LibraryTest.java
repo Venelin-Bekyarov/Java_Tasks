@@ -11,7 +11,7 @@ public class LibraryTest {
         String row = scanner.nextLine();
         while (!Objects.equals(row, "")) {
             String[] separators = {",", "(", ")"};
-            String[] inputLine = row.split("[{},()\\s]+");
+            String[] inputLine = row.split("[{},()]+");
             for (int i = 0; i < inputLine.length; i++) {
                 inputLine[i] = inputLine[i].trim();
             }
@@ -36,7 +36,10 @@ public class LibraryTest {
                 break;
             }
             case "deleteBook": {
-                //outputString.append(helikon.deleteBook(Book.getBookList.equals(inputLine[1])) + '\'');?????
+                Book bookToDelete = helikon.bookSearch(inputLine[1]);
+                if (bookToDelete != null){
+                    outputString.append(helikon.deleteBook(bookToDelete) + '\'');
+                }
                 break;
             }
             case "deleteAllBooksAuthor": {

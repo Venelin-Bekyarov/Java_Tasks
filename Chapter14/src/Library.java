@@ -53,6 +53,16 @@ public class Library {
         return "Not found.";
     }
 
+    public Book bookSearch(String title) {
+        for (Book book : bookList) {
+            if (book.getTitle().equals(title)) {
+                return book;
+            }
+        }
+        return null;
+    }
+
+
     public String searchAuthor(String author) {
         StringBuilder searchedBooks = new StringBuilder();
         boolean isFoundBook = false;
@@ -80,7 +90,7 @@ public class Library {
 
     public String deleteAllBooksAuthor(String author) {
         int numberBooksBeforeDel = bookList.size();
-        //bookList.removeAll( author == author);?????
+        //bookList.removeAll( author);?????
         int numberOfBooksAfterDel = bookList.size();
         int deletedBooks = numberBooksBeforeDel - numberOfBooksAfterDel;
         return deletedBooks + " Book deleted.";

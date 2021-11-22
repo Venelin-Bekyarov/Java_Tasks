@@ -10,8 +10,8 @@ public class Call {
     private int callTimeSpan;
 
     public Call(LocalDate dateTime, LocalDateTime callStart, int callTimeSpan) {
-        this.dateTime = LocalDate.now();
-        this.callStart = LocalDateTime.now();
+        this.dateTime = dateTime;
+        this.callStart = callStart;
         this.callTimeSpan = callTimeSpan;
 
     }
