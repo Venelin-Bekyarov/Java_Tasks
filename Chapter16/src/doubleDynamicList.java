@@ -37,7 +37,6 @@ public class doubleDynamicList {
         }
         compile++;
     }
-
     public Object remove(int mark) {
         if (mark >= compile || mark < 0) {
             throw new IndexOutOfBoundsException(
