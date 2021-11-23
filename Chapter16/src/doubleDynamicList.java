@@ -115,11 +115,11 @@ public class doubleDynamicList {
             throw new IndexOutOfBoundsException(
                     "Invalid index: " + mark);
         }
-        Node currentNode = this.top;
+        Node presentNode = this.top;
         for (int i = 0; i < mark; i++) {
-            currentNode = currentNode.upcome;
+            presentNode = presentNode.upcome;
         }
-        return currentNode.segment;
+        return presentNode.segment;
     }
 
     private class Node {
@@ -127,9 +127,9 @@ public class doubleDynamicList {
         Node upcome;
         Node former;
 
-        Node(Object segment, Node prevNode) {
+        Node(Object segment, Node formerNode) {
             this.segment = segment;
-            prevNode.upcome = this;
+            formerNode.upcome = this;
             this.upcome = upcome;
             this.former = former;
         }
