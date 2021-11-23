@@ -76,6 +76,8 @@ public class DynamicList {
      * @param item – the item for removal
      * @return the index of the element or -1 if does not exist
      */
+
+    //indexOf:
     public int remove(Object item){
 // Find the element containing searched item
         int currentIndex = 0;
