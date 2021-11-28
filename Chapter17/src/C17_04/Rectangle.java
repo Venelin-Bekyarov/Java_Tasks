@@ -6,7 +6,7 @@ public class Rectangle extends Shape {
         super(width, height);
     }
 
-    @Override
+
     public double calculateSurface() {
         double rectangleSurface = getWidth() * getHeight();
         return rectangleSurface;

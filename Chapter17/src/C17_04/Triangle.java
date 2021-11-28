@@ -11,7 +11,7 @@ public class Triangle extends Shape {
         return triangleSurface;
     }
 
-    @Override
+
     public String toString() {
         String triangleAsString = String.format("Triangle surface %.2f", calculateSurface());
         return triangleAsString;
