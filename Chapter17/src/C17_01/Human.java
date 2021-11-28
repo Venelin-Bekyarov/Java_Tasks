@@ -29,6 +29,6 @@ public class Human {
     @Override
     public String toString() {
         return "Person (" +
-                firstName +' '+ lastName + ')'+ '\n';
+                firstName + ' ' + lastName + ')' + '\n';
     }
 }
