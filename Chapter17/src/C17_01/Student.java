@@ -22,7 +22,7 @@ public class Student extends Human {
         return comparisonGrade;
     }
 
-    @Override
+
     public String toString() {
         String result = String.format("%s %s %.2f",getFirstName(),getLastName(),grade + '\n');
         return result;

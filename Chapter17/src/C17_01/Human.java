@@ -26,7 +26,7 @@ public class Human {
         return comparison;
     }
 
-    @Override
+
     public String toString() {
         return "Person (" +
                 firstName + ' ' + lastName + ')' + '\n';
