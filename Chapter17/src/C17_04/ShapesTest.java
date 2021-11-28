@@ -1,7 +1,6 @@
 package C17_04;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class ShapesTest {
@@ -21,7 +20,7 @@ public class ShapesTest {
         String inputShapesCount = scanner.nextLine();
         int shapesCount = Integer.parseInt(inputShapesCount);
 
-        ArrayList<Shape> shapes = (ArrayList<Shape>) readShapes(shapesCount);
+        ArrayList<Shape> shapes = readShapes(shapesCount);
 
         printShapes(shapes);
     }
@@ -33,10 +32,10 @@ public class ShapesTest {
     }
 
 
-    private static List<Shape> readShapes(int shapesCount) throws Exception {
+    private static ArrayList<Shape> readShapes(int shapesCount) throws Exception {
 
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Shape> shapes = new ArrayList<Shape>(shapesCount);
+        ArrayList<Shape> shapes = new ArrayList<>(shapesCount);
         for (int i = 0; i < shapesCount; i++) {
             String line = scanner.nextLine();
             String[] splitLine = line.split("\\s+");
