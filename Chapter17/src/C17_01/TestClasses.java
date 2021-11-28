@@ -8,13 +8,12 @@ public class TestClasses {
 
         //Input pattern:
         /**
-        2
-        Ivo Milenov 4.56
-        Tihomir Iliev 3.50
-        2
-        Ivan Andonov 10.00 3
-        Stoicho Kirchev 10.00 5
-
+         2
+         Ivo Milenov 4.56
+         Tihomir Iliev 3.50
+         2
+         Ivan Andonov 10.00 3
+         Stoicho Kirchev 10.00 5
          **/
 
 
@@ -61,7 +60,7 @@ public class TestClasses {
             String lastName = data[1];
             double rate = Double.parseDouble(data[2]);
             byte hours = Byte.parseByte(data[3]);
-            double wages = rate*hours;
+            double wages = rate * hours;
             Worker workerOut = new Worker(firstName, lastName, rate, hours, wages);
             workers[worker] = workerOut;
         }
