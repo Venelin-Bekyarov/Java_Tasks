@@ -23,19 +23,19 @@ public abstract class Lion extends Felidae {
         this.weight = weight;
     }
 
-    public boolean catchPray(Object pray) {
-        super.hide();
-        this.ambush();
-        super.run();
-    }
-
+//    public boolean catchPray(Object pray) {
+//        super.hide();
+//        this.ambush();
+//        super.run();
+//    }
+//
 //    public void walk() {
 //        this.movePaw(frontLeft);
 //        this.movePaw(frontRight);
 //        this.movePaw(bottomLeft);
 //        this.movePaw(bottomRight);
 //    }
-
+//
 //    public Mammal[] reproduce(Mammal anotherLion) {
 //        return new Mammal[]{new Lion(), new Lion()};
 //    }
