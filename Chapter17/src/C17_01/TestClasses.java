@@ -6,6 +6,18 @@ public class TestClasses {
 
     public static void main(String[] args) {
 
+        //Input pattern:
+        /**
+        2
+        Ivo Milenov 4.56
+        Tihomir Iliev 3.50
+        2
+        Ivan Andonov 10.00 3
+        Stoicho Kirchev 10.00 5
+
+         **/
+
+
         Student[] students = readStudents();
         Worker[] workers = readWorkers();
 
