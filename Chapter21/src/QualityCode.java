@@ -13,6 +13,7 @@ public class QualityCode {
             default:   - the only reachable statement- the whole switch case is redundant and should be removed.
                 System.out.print("4");  - "4" will be printed only.
                 break;
+                }
  */
         int loopBoundary = 5;
         final int VALUE_F = Character.getNumericValue('f');
